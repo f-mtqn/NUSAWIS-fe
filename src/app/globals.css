@@ -16,7 +16,8 @@ body {
   @apply bg-white font-sans text-ink antialiased;
 }
 
-:focus-visible {
+/* Hanya berlaku untuk tombol dan link, bukan input/textarea agar tidak bentrok dengan outline-none */
+:focus-visible:not(input):not(textarea):not(select) {
   outline: 2px solid var(--color-brand);
   outline-offset: 2px;
 }

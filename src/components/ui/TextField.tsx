@@ -17,7 +17,7 @@ export default function TextField({ label, trailing, className = "", ...props }:
       <div className="flex h-[52px] items-center rounded-lg border border-line bg-white px-3 focus-within:border-brand focus-within:ring-2 focus-within:ring-brand/20">
         <input
           id={id}
-          className={`h-full w-full bg-transparent text-[15px] outline-none placeholder:text-muted/70 ${className}`}
+          className={`h-full w-full bg-transparent text-[15px] outline-none focus:outline-none focus:ring-0 placeholder:text-muted/70 ${className}`}
           {...props}
         />
         {trailing}
